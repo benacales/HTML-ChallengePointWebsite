@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang = "en">
+<head>
+<meta charset = "utf-8";>
+<meta name = "Challenge Point" content = "About Challenge Point and the workshops the buisness offers";>
+<title> Challenge Point </title>
+<link href="https://fonts.googleapis.com/css?family=Lato|Permanent+Marker" rel="stylesheet">
+<link rel = "stylesheet" href = "websiteStyles.css">
+</head>
+
+<body>
+<header>
+    <img src="CP Logo 2018.jpg" alt="Challenge Point Logo" id = "logo"> 
+    <h1><u>Challenge Point</u></h1>
+</header>
+
+<div id = "navBar">
+
+<p><a class = "nav" href = "#WorkshopsRetreats"> Workshops&nbsp;and&nbsp;Retreats </a></p>
+<p><a class = "nav" href = "#FAQ"> Frequently&nbsp;Asked&nbsp;Questions </a></p>
+<p><a class = "nav" href = "#Pictures"> Pictures </a></p>
+<p><a class = "nav" href = "#Contact"> Contact </a></p>
+</div>
+
+<div id = "everything">
+
+    <div class = "column" id = "mainBody">
+
+        <h2>The Two Definitions of Challenge Point</h2>
+        <div class = "indent">   
+            <span>
+                <b>Challenge Point</b> (n.) : The point that lies just beyond one's comfort zone, unreachable without sacrifice, unattainable without growth, where courage is tested, and hopes are realized.
+            </span>
+            <br />
+            <span>
+                <b>Challenge Point</b> : a non-profit, teambuilding program that teaches communication, problem-solving, decision-making, and several other leadership and relationship skills using group challenges.
+            </span>
+        </div>
+
+        <h2 id = "WorkshopsRetreats">Workshops & Retreats</h2>
+        <div class = "indent"> 
+            <t></t>Every Challenge Point workshop and retreat is unique because your group is unique. We custom design each challenge to meet the needs and abilities of your crew. 
+            Retreats, which span a couple of days, are our favorite because we get to spend more time with you and watch your group grow. Workshops, where we work with you for one day, are often best for groups that regularly meet 9-5 during the week.
+            It is our goal to not only give individuals a learning experience but an adventure they will not forget. Activities are a mix of fun games and group challenges. They begin with the "basics" and then build on each other as the group progresses. The conquering of each challenge always leads to a time of processing in which the group members discuss what they did, the skills they used, improvements they can make, and how they can relate these things to their lives.
+        </div>
+
+        <h2 id = "FAQ">Here are the answers to some common questions</h2>
+        <div class = "indent">
+            <h3>Where do we do workshops at?</h3>
+            We travel to your location. We will need an area big enough for your group to move around comfortably. That may be a field, gym, common area, pavilion, or park. Please keep the weather in mind.
+            <h3>What is the age range?</h3>
+            We work with teens and adults, our program is not designed for young children.
+            <h3>What sized groups do you work with?</h3>
+            Our program is very group-size specific and activities change according to the size of the. The minimum number is 8 while the maximum number is 25. 
+            <h3>What types of groups do you work with?</h3>
+            Your group must have a legitimate purpose and be willing to work on your group's ability to fulfill that purpose. If you are a fraternity or sorority that just wants to have fun, we suggest ziplining. 
+            <h3>Are there any saftey hazards associated with your activities?</h3>
+            Challenge Point is not a high ropes course. You will not be hanging 20 feet in the air. We generally stay on the ground, however, based on your ability, we may have you swinging a couple of feet off the ground, but don't worry… <b><u>Safety is always first.</u></b>
+
+        </div>
+
+        <h2 id = "Pictures">Pictures</h2>
+
+        <div id = "row">
+            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+
+                <img class="mySlides" src="Profile Pic.jpg">
+                <img class="mySlides" src="People 101.jpg">
+                <img class="mySlides" src="Profile Pic.jpg">
+                <img class="mySlides" src="People 101.jpg">
+
+            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+
+        <b id = "share">Have pictures of your group tackling our Challenge Point courses? Share them with us on Facebook!</b>
+         
+
+        <h2 id = "Contact">Contact</h2>
+        
+        <div class = "indent"> 
+            <span><b>Phone:</b> Don't even try. We don't have a secretary and Larry is always out of range. Just try email. He checks it daily (unless he’s in the woods or on the side of a mountain).</span>
+            <span><b>Email:</b>   larry@challengepoint.org</span>
+            <span><b>Facebook:</b>  <a href = https://www.facebook.com/ChallengePoint> https://www.facebook.com/ChallengePoint </a></span>
+            <span>
+                <b>
+                    Physical address :</b> 30207 County Rd 49, Fruithurst, AL 36262
+            </span>
+        </div>
+    </div>
+
+    <div id = "aboutLarry"> 
+        <img src="Profile Pic.jpg" alt="larrysFace" id = "larrysFace"> 
+        <h2>About Challenge Point</h2>
+        <div> 
+            Challenge Point has always been a mobile program that travels to your location. As of 2012, we have settled in Fruithurst, Alabama and are currently working on creating a retreat center so that groups can come to us. It is still a work in progress.
+            Challenge Point's Program Director, Larry Alexander, has worked as a Group Dynamics Counselor for over 20 years. A native of Jasper, Alabama, Larry is a graduate of Lipscomb University in Nashville, Tennessee. An accomplished thru-hiker, Larry has completed the Appalachian Trail, the Pacific Crest Trail, the John Muir Trail, as well as several international hikes. Larry is also the author of <i>Through Hiker's Eyes – A Journey Along the Appalachian Trail</i> and <i>People 101 – Getting an A in Relationships</i>. 
+        </div>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+    </script>
+    
+</div>
+</div>
+
+</body>
+</html>
